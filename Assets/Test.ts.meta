@@ -19,12 +19,11 @@ ScriptedImporter:
   WrapperFilters: []
   wrapperOutputDirectory: Generated
   compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
-    { value: true });\r\nconst UnityEngine_1 = require(\"UnityEngine\");\r\nconst
-    ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass Test extends ZEPETO_Script_1.ZepetoScriptBehaviour
-    {\r\n    Start() {\r\n        UnityEngine_1.Debug.Log(\"Start\");\r\n       
-    this.TestFun();\r\n    }\r\n    TestFun() {\r\n        console.log(\"LOG\");\r\n       
-    const promise = new Promise((resolve, reject) => {\r\n            setTimeout(()
-    => resolve(\"TETE\"), 5000);\r\n        });\r\n        promise.then((res) =>
-    {\r\n            UnityEngine_1.Debug.Log(res);\r\n        });\r\n        UnityEngine_1.Debug.Log(\"Test\");\r\n   
-    }\r\n}\r\nexports.default = Test;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSw2Q0FBb0M7QUFDcEMsaURBQXFEO0FBRXJELE1BQXFCLElBQUssU0FBUSxxQ0FBcUI7SUFDbkQsS0FBSztRQUNELG1CQUFLLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxDQUFDO1FBQ25CLElBQUksQ0FBQyxPQUFPLEVBQUUsQ0FBQztJQUNuQixDQUFDO0lBRUQsT0FBTztRQUNILE9BQU8sQ0FBQyxHQUFHLENBQUMsS0FBSyxDQUFDLENBQUE7UUFDbEIsTUFBTSxPQUFPLEdBQUcsSUFBSSxPQUFPLENBQUMsQ0FBQyxPQUFPLEVBQUUsTUFBTSxFQUFFLEVBQUU7WUFDNUMsVUFBVSxDQUFDLEdBQUcsRUFBRSxDQUFDLE9BQU8sQ0FBQyxNQUFNLENBQUMsRUFBRSxJQUFJLENBQUMsQ0FBQTtRQUMzQyxDQUFDLENBQUMsQ0FBQTtRQUNGLE9BQU8sQ0FBQyxJQUFJLENBQUMsQ0FBQyxHQUFHLEVBQUUsRUFBRTtZQUNqQixtQkFBSyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQTtRQUNsQixDQUFDLENBQUMsQ0FBQTtRQUNGLG1CQUFLLENBQUMsR0FBRyxDQUFDLE1BQU0sQ0FBQyxDQUFDO0lBQ3RCLENBQUM7Q0FDSjtBQWhCRCx1QkFnQkMifQ==","assetPath":"Assets/Test.ts","manifest":{"properties":[],"name":"Test","description":""},"isCompiled":true}'
-  typescriptHash: fb2ad120e6198cee7494a31ea97f11ae
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Test extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    console.log(\"START\");\r\n        this.TestFun();\r\n    }\r\n    TestFun()
+    {\r\n        console.log(\"TEST FUN\");\r\n        const promise = new Promise((resolve,
+    _) => {\r\n            setTimeout(() => resolve(\"DELAY TEST\"), 5000);\r\n       
+    });\r\n        promise.then((res) => {\r\n            console.log(res);\r\n       
+    });\r\n    }\r\n}\r\nexports.default = Test;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVzdC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsSUFBSyxTQUFRLHFDQUFxQjtJQUNuRCxLQUFLO1FBQ0QsT0FBTyxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsQ0FBQTtRQUNwQixJQUFJLENBQUMsT0FBTyxFQUFFLENBQUM7SUFDbkIsQ0FBQztJQUVELE9BQU87UUFDSCxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQyxDQUFBO1FBQ3ZCLE1BQU0sT0FBTyxHQUFHLElBQUksT0FBTyxDQUFDLENBQUMsT0FBTyxFQUFFLENBQUMsRUFBRSxFQUFFO1lBQ3ZDLFVBQVUsQ0FBQyxHQUFHLEVBQUUsQ0FBQyxPQUFPLENBQUMsWUFBWSxDQUFDLEVBQUUsSUFBSSxDQUFDLENBQUE7UUFDakQsQ0FBQyxDQUFDLENBQUE7UUFDRixPQUFPLENBQUMsSUFBSSxDQUFDLENBQUMsR0FBRyxFQUFFLEVBQUU7WUFDakIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQTtRQUNwQixDQUFDLENBQUMsQ0FBQTtJQUNOLENBQUM7Q0FDSjtBQWZELHVCQWVDIn0=","assetPath":"Assets/Test.ts","manifest":{"properties":[],"name":"Test","description":""},"isCompiled":true}'
+  typescriptHash: 5230464af686aea015f729a2400c0ca9
